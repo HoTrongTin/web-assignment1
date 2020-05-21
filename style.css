@@ -1,0 +1,114 @@
+body,
+html {
+  height: 100%;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+#jumbotron {
+  /* -webkit-animation: color-change-2x 10s linear infinite alternate both;
+  animation: color-change-2x 10s linear infinite alternate both; */
+  /* height: 80vh !important; */
+  background-image: url("http://demo.lion-coders.com/html/sarchholm-real-estate-template/images/single-agency/2.jpg");
+}
+
+.hero.is-fullheight {
+  min-height: 80vh;
+}
+
+#jumbotron .title,
+#jumbotron .subtitle {
+  color: white;
+}
+
+.box {
+  background-color: rgb(179, 183, 184) !important;
+}
+
+#about-us-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+  /* height: 200px; */
+  /* border: 3px solid green; */
+}
+
+.overview-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.overview-item h1 {
+  padding-top: 10px;
+  margin-bottom: 0px !important;
+}
+
+.parallax {
+  /* The image used */
+  background-image: url("http://demo.lion-coders.com/html/sarchholm-real-estate-template/images/single-agency/agency_bg_1.jpg");
+
+  /* Full height */
+  width: 100vw;
+  height: 50vh;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media only screen and (max-width: 1024px) {
+  .parallax {
+    background-attachment: unset;
+  }
+}
+
+/* Phần tabs giới thiệu */
+.property-amenities-box {
+  transform: translateY(50%);
+  background: #fff;
+  box-shadow: 0 15px 40px rgba(32, 32, 32, 0.09);
+  border-radius: 3px;
+  padding: 30px 50px;
+  min-height: 450px;
+  min-width: 610px;
+}
+
+@media only screen and (max-width: 768px) {
+  .parallax {
+    display: flex;
+    justify-content: center;
+  }
+  .property-amenities-box {
+    width: 90vw;
+    min-width: 320px;
+  }
+  .tabs.is-centered ul {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/* Kết thúc phần tabs giới thiệu */
