@@ -13,9 +13,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <link rel="stylesheet" href="./style.css" />
-
-    <script src="./scripts.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css" />
   </head>
   <body>
     <!-- Jumbotron -->
@@ -85,16 +83,26 @@
       </div>
       <!-- Hero content: will be in the middle -->
       <div class="hero-body">
-        <div class="container has-text-centered">
-          <h1 class="title">
-            What is Lorem Ipsum?
-          </h1>
-          <h2 class="subtitle">
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s, when an unknown printer took a galley of type
-            and scrambled it to make a type specimen book.
-          </h2>
+        <div class="swiper-container-0">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide" style="background: url(./assets/img/gallery/2.jpg)"></div>
+            <div class="swiper-slide" style="background: url(./assets/img/gallery/8.jpg)"></div>
+            <div class="swiper-slide" style="background: url(./assets/img/gallery/14.jpg)"></div>
+            <div class="swiper-button-prev" style="color: #ffffff;"></div>
+            <div class="swiper-button-next" style="color: #ffffff;"></div>
+            <div class="content">
+              <h1>Apartment for sale</h1>
+                <p><i class="fas fa-map-marker-alt"></i> 39 Casey Ave, Sunbury, VIC 3429</p>
+                <div class="trend-open">
+                    <p>Starts from / $25000</p>
+                </div>
+                <button class="fancy-button">
+                  Explore Now
+                  <div class="button__horizontal"></div>
+                  <div class="button__vertical"></div>
+                </button>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -108,11 +116,38 @@
               <div class="tile">
                 <div class="tile is-4">
                   <article class="tile is-child" id="about-us-title">
-                    <p class="subtitle">Top box</p>
+                    <p class="title">About Property</p>
                     <div class="content">
                       <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Proin ornare magna eros
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod libero amet, laborum qui nulla quae alias tempora. Placeat voluptatem eum numquam quas distinctio obcaecati quaerat, repudiandae qui!
+                      </p>
+                    </div>
+                  </article>
+                </div>
+                <div class="tile is-parent is-vertical">
+                  <article class="tile is-child box" style="background-color: #6449e7;">
+                    <figure class="image is-96x96">
+                      <img
+                        src="./assets/img/info/village_1.png"
+                      />
+                    </figure>
+                    <p class="subtitle" style="color: white;">Quiet Neighborhood</p>
+                    <div class="content" style="color: white;">
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia aliquid cumque
+                      </p>
+                    </div>
+                  </article>
+                  <article class="tile is-child box">
+                    <figure class="image is-96x96">
+                      <img
+                        src="./assets/img/info/playground_2.png"
+                      />
+                    </figure>
+                    <p class="subtitle">Kids playground</p>
+                    <div class="content">
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia aliquid cumque.
                       </p>
                     </div>
                   </article>
@@ -121,33 +156,24 @@
                   <article class="tile is-child box">
                     <figure class="image is-96x96">
                       <img
-                        src="https://bulma.io/images/placeholders/96x96.png"
+                      src="./assets/img/info/shopping-mall.png"
                       />
                     </figure>
-                    <p class="subtitle">With an image</p>
-                  </article>
-                  <article class="tile is-child box">
-                    <p class="subtitle">Aligned with the right column</p>
+                    <p class="subtitle">Shopping Mall</p>
                     <div class="content">
                       <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Proin ornare magna eros
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia aliquid cumque.
                       </p>
                     </div>
                   </article>
-                </div>
-                <div class="tile is-parent is-vertical">
-                  <article class="tile is-child box">
+                  <article class="tile is-child box" style="background-color: #FA6742;">
                     <figure class="image is-96x96">
                       <img
-                        src="https://bulma.io/images/placeholders/96x96.png"
+                      src="./assets/img/info/smart-home.png"
                       />
                     </figure>
-                    <p class="subtitle">With an image</p>
-                  </article>
-                  <article class="tile is-child box">
-                    <p class="subtitle">Aligned with the right column</p>
-                    <div class="content">
+                    <p class="subtitle" style="color: white;">Fabulous Views</p>
+                    <div class="content" style="color: white;">
                       <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                         Proin ornare magna eros
@@ -430,16 +456,519 @@
       </div>
     </div>
     <!-- kết thúc paralax -->
-    <div
-      style="
-        height: 1000px;
-        background-color: rgb(255, 255, 255);
-        font-size: 36px;
-        padding-top: 250px;
-      "
-    >
-      This div is just here to enable scrolling. Tip: Try to remove the
-      background-attachment property to remove the scrolling effect.
+    <!-- <div class="container photo-gallery">
+      <h3 class="subtitle is-3" style="text-align: center;">Photo Gallery</h3>
+      <div class="columns is-multiline is-centered">
+        <div
+          class="column is-one-quarter-desktop is-half-tablet gallery-item"
+          style="background-image: url(assets/img/gallery/room_1.jpg);"
+        >
+          <div class="list-detail">
+            <p>Living Room</p>
+            <h4>Icon</h4>
+          </div>
+        </div>
+        <div
+          class="column is-half-desktop is-half-tablet gallery-item"
+          style="background-image: url(assets/img/gallery/bedroom_4.jpg);"
+        >
+          <figure class="image">
+            <img src="" />
+          </figure>
+          <div class="list-detail">
+            <p>Bedrooms</p>
+            <h4>Icon</h4>
+          </div>
+        </div>
+        <div
+          class="column is-one-quarter-desktop is-half-tablet gallery-item"
+          style="background-image: url(assets/img/gallery/garage_1.jpg);"
+        ></div>
+        <div
+          class="column is-three-fifths-desktop is-half-tablet gallery-item"
+          style="background-image: url(assets/img/gallery/kitchen_2.jpg);"
+        ></div>
+        <div
+          class="column is-two-fifths-desktop is-full-tablet gallery-item"
+          style="background-image: url(assets/img/gallery/bathroom_1.jpg);"
+        ></div>
+      </div>
+    </div> -->
+
+    <div class="container photo-gallery">
+      <h3 class="subtitle is-3" style="text-align: center;">Photo Gallery</h3>
+      <div class="tile is-ancestor">
+        <div class="tile is-4 is-parent list-detail">
+          <article
+            class="tile is-child box"
+            style="background-image: url(assets/img/gallery/room_1.jpg);"
+          >
+            <p class="subtitle">Living Room</p>
+            <span class="icon" id="open-modal">
+              <img src="assets/img/expand.svg" alt="" />
+            </span>
+          </article>
+          <!-- Modal -->
+          <div class="modal">
+            <div class="modal-background"></div>
+            <div class="modal-content">
+              <p class="image is-4by3">
+                <img
+                  src="https://bulma.io/images/placeholders/1280x960.png"
+                  alt=""
+                />
+              </p>
+            </div>
+            <button class="modal-close is-large" aria-label="close"></button>
+          </div>
+        </div>
+        <div class="tile is-4 is-parent list-detail">
+          <article
+            class="tile is-child box"
+            style="background-image: url(assets/img/gallery/bedroom_4.jpg);"
+          >
+            <p class="subtitle">Bedrooms</p>
+            <span class="icon">
+              <img src="assets/img/expand.svg" alt="" />
+            </span>
+          </article>
+        </div>
+        <div class="tile is-4 is-parent list-detail">
+          <article
+            class="tile is-child box"
+            style="background-image: url(assets/img/gallery/garage_1.jpg);"
+          >
+            <p class="subtitle">Garage</p>
+            <span class="icon">
+              <img src="assets/img/expand.svg" alt="" />
+            </span>
+          </article>
+        </div>
+      </div>
+      <div class="tile is-ancestor">
+        <div class="tile is-7 is-parent list-detail">
+          <article
+            class="tile is-child box"
+            style="background-image: url(assets/img/gallery/kitchen_2.jpg);"
+          >
+            <p class="subtitle">Kitchen</p>
+            <span class="icon">
+              <img src="assets/img/expand.svg" alt="" />
+            </span>
+          </article>
+        </div>
+        <div class="tile is-5 is-parent list-detail">
+          <article
+            class="tile is-child box"
+            style="background-image: url(assets/img/gallery/bathroom_1.jpg);"
+          >
+            <p class="subtitle">Bathrooms</p>
+            <span class="icon">
+              <img src="assets/img/expand.svg" alt="" />
+            </span>
+          </article>
+        </div>
+      </div>
     </div>
+
+    <!-- Client review -->
+    <div class="container client-review">
+      <h3 class="subtitle is-3" style="text-align: center;">
+        Hear From Our Clients
+      </h3>
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="card card-white">
+              <div class="card-content">
+                <img
+                  src="https://images.unsplash.com/photo-1466690672306-5f92132f7248?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=668&q=80"
+                  class="card-img-top"
+                  alt="profile-picture"
+                />
+                <h2>Product designer</h2>
+                <h1>Stellan Hümveld</h1>
+                <p>
+                  A design approach is a general philosophy that may or may not
+                  include a guide for specific methods. Some are to guide the
+                  overall goal of the design.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card card-white">
+              <div class="card-content">
+                <img
+                  src="https://images.unsplash.com/photo-1466690672306-5f92132f7248?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=668&q=80"
+                  class="card-img-top"
+                  alt="profile-picture"
+                />
+                <h2>Product designer</h2>
+                <h1>Stellan Hümveld</h1>
+                <p>
+                  A design approach is a general philosophy that may or may not
+                  include a guide for specific methods. Some are to guide the
+                  overall goal of the design.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card card-white">
+              <div class="card-content">
+                <img
+                  src="https://images.unsplash.com/photo-1466690672306-5f92132f7248?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=668&q=80"
+                  class="card-img-top"
+                  alt="profile-picture"
+                />
+                <h2>Product designer</h2>
+                <h1>Stellan Hümveld</h1>
+                <p>
+                  A design approach is a general philosophy that may or may not
+                  include a guide for specific methods. Some are to guide the
+                  overall goal of the design.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card card-white">
+              <div class="card-content">
+                <img
+                  src="https://images.unsplash.com/photo-1466690672306-5f92132f7248?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=668&q=80"
+                  class="card-img-top"
+                  alt="profile-picture"
+                />
+                <h2>Product designer</h2>
+                <h1>Stellan Hümveld</h1>
+                <p>
+                  A design approach is a general philosophy that may or may not
+                  include a guide for specific methods. Some are to guide the
+                  overall goal of the design.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card card-white">
+              <div class="card-content">
+                <img
+                  src="https://images.unsplash.com/photo-1466690672306-5f92132f7248?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=668&q=80"
+                  class="card-img-top"
+                  alt="profile-picture"
+                />
+                <h2>Product designer</h2>
+                <h1>Stellan Hümveld</h1>
+                <p>
+                  A design approach is a general philosophy that may or may not
+                  include a guide for specific methods. Some are to guide the
+                  overall goal of the design.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card card-white">
+              <div class="card-content">
+                <img
+                  src="https://images.unsplash.com/photo-1466690672306-5f92132f7248?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=668&q=80"
+                  class="card-img-top"
+                  alt="profile-picture"
+                />
+                <h2>Product designer</h2>
+                <h1>Stellan Hümveld</h1>
+                <p>
+                  A design approach is a general philosophy that may or may not
+                  include a guide for specific methods. Some are to guide the
+                  overall goal of the design.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card card-white">
+              <div class="card-content">
+                <img
+                  src="https://images.unsplash.com/photo-1466690672306-5f92132f7248?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=668&q=80"
+                  class="card-img-top"
+                  alt="profile-picture"
+                />
+                <h2>Product designer</h2>
+                <h1>Stellan Hümveld</h1>
+                <p>
+                  A design approach is a general philosophy that may or may not
+                  include a guide for specific methods. Some are to guide the
+                  overall goal of the design.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card card-white">
+              <div class="card-content">
+                <img
+                  src="https://images.unsplash.com/photo-1466690672306-5f92132f7248?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=668&q=80"
+                  class="card-img-top"
+                  alt="profile-picture"
+                />
+                <h2>Product designer</h2>
+                <h1>Stellan Hümveld</h1>
+                <p>
+                  A design approach is a general philosophy that may or may not
+                  include a guide for specific methods. Some are to guide the
+                  overall goal of the design.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card card-white">
+              <div class="card-content">
+                <img
+                  src="https://images.unsplash.com/photo-1466690672306-5f92132f7248?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=668&q=80"
+                  class="card-img-top"
+                  alt="profile-picture"
+                />
+                <h2>Product designer</h2>
+                <h1>Stellan Hümveld</h1>
+                <p>
+                  A design approach is a general philosophy that may or may not
+                  include a guide for specific methods. Some are to guide the
+                  overall goal of the design.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card card-white">
+              <div class="card-content">
+                <img
+                  src="https://images.unsplash.com/photo-1466690672306-5f92132f7248?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=668&q=80"
+                  class="card-img-top"
+                  alt="profile-picture"
+                />
+                <h2>Product designer</h2>
+                <h1>Stellan Hümveld</h1>
+                <p>
+                  A design approach is a general philosophy that may or may not
+                  include a guide for specific methods. Some are to guide the
+                  overall goal of the design.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+    <!-- Similar Properties -->
+    <div class="container similar-properties">
+      <h3 class="subtitle is-3" style="text-align: center;">
+        Find Similar Properties
+      </h3>
+      <div class="swiper-container-2">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="grid__item">
+              <div
+                class="grid__item-imgwrap"
+                style="
+                  background: url(http://demo.lion-coders.com/html/sarchholm-real-estate-template/images/featured/featured_9.jpg);
+                "
+              >
+                <div
+                  class="grid__item-img grid__item-img--scaled"
+                  style="
+                    background: url(http://demo.lion-coders.com/html/sarchholm-real-estate-template/images/featured/featured_9.jpg);
+                  "
+                ></div>
+              </div>
+              <div class="grid__item-content">
+                <h3 class="grid__item-title">Young Women</h3>
+                <p class="grid__text">
+                  3 Bed | 2 Bath | 1400 sqrt
+                </p>
+                <button class="button is-info is-inverted is-outlined">
+                  Explore Now
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="grid__item">
+              <div
+                class="grid__item-imgwrap"
+                style="
+                  background: url(http://demo.lion-coders.com/html/sarchholm-real-estate-template/images/featured/featured_9.jpg);
+                "
+              >
+                <div
+                  class="grid__item-img grid__item-img--scaled"
+                  style="
+                    background: url(http://demo.lion-coders.com/html/sarchholm-real-estate-template/images/featured/featured_9.jpg);
+                  "
+                ></div>
+              </div>
+              <div class="grid__item-content">
+                <h3 class="grid__item-title">Family Apartment</h3>
+                <p class="grid__text">
+                  3 Bed | 2 Bath | 1400 sqrt
+                </p>
+                <button class="button is-info is-inverted is-outlined">
+                  Explore Now
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="grid__item">
+              <div
+                class="grid__item-imgwrap"
+                style="
+                  background: url(http://demo.lion-coders.com/html/sarchholm-real-estate-template/images/featured/featured_9.jpg);
+                "
+              >
+                <div
+                  class="grid__item-img grid__item-img--scaled"
+                  style="
+                    background: url(http://demo.lion-coders.com/html/sarchholm-real-estate-template/images/featured/featured_9.jpg);
+                  "
+                ></div>
+              </div>
+              <div class="grid__item-content">
+                <h3 class="grid__item-title">Young Women</h3>
+                <p class="grid__text">
+                  3 Bed | 2 Bath | 1400 sqrt
+                </p>
+                <button class="button is-info is-inverted is-outlined">
+                  Explore Now
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="grid__item">
+              <div
+                class="grid__item-imgwrap"
+                style="
+                  background: url(http://demo.lion-coders.com/html/sarchholm-real-estate-template/images/featured/featured_9.jpg);
+                "
+              >
+                <div
+                  class="grid__item-img grid__item-img--scaled"
+                  style="
+                    background: url(http://demo.lion-coders.com/html/sarchholm-real-estate-template/images/featured/featured_9.jpg);
+                  "
+                ></div>
+              </div>
+              <div class="grid__item-content">
+                <h3 class="grid__item-title">Young Women</h3>
+                <p class="grid__text">
+                  3 Bed | 2 Bath | 1400 sqrt
+                </p>
+                <button class="button is-info is-inverted is-outlined">
+                  Explore Now
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="grid__item">
+              <div
+                class="grid__item-imgwrap"
+                style="
+                  background: url(http://demo.lion-coders.com/html/sarchholm-real-estate-template/images/featured/featured_9.jpg);
+                "
+              >
+                <div
+                  class="grid__item-img grid__item-img--scaled"
+                  style="
+                    background: url(http://demo.lion-coders.com/html/sarchholm-real-estate-template/images/featured/featured_9.jpg);
+                  "
+                ></div>
+              </div>
+              <div class="grid__item-content">
+                <h3 class="grid__item-title">Young Women</h3>
+                <p class="grid__text">
+                  3 Bed | 2 Bath | 1400 sqrt
+                </p>
+                <button class="button is-info is-inverted is-outlined">
+                  Explore Now
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+    <footer class="footer has-background-white-ter">
+      <div class="content has-text-centered has-text-white">
+        <div class="columns is-offset-1">
+          <div class="column">
+            <a href="#" class="footer-logo animoBorderLeftRight"">
+              <img
+                src="https://bulma.io/images/bulma-logo.png"
+                alt="Bulma: a modern CSS framework based on Flexbox"
+                width="112"
+                height="28"
+              />
+            </a>
+            <p class="has-text-center">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
+          </div>
+          <div class="column">
+            <h6>Popular Searches</h6>
+            <ul>
+              <li>
+                <a href="#" class="animoBorderLeftRight">Property for Rent</a>
+              </li>
+              <li>
+                <a href="#" class="animoBorderLeftRight">Property for Sale</a>
+              </li>
+              <li>
+                <a href="#" class="animoBorderLeftRight">Resale Properties</a>
+              </li>
+              <li>
+                <a href="#" class="animoBorderLeftRight">Recent Properties</a>
+              </li>
+            </ul>
+          </div>
+          <div class="column">
+            <h6>Quick Links</h6>
+            <ul>
+              <li><a href="#" class="animoBorderLeftRight">About us</a></li>
+              <li><a href="#" class="animoBorderLeftRight">Contact us</a></li>
+              <li>
+                <a href="#" class="animoBorderLeftRight">Privacy Policy</a>
+              </li>
+              <li><a href="#" class="animoBorderLeftRight">FAQ</a></li>
+            </ul>
+          </div>
+          <div class="column">
+            <h6>Subscribe</h6>
+            <div class="control has-icons-left has-icons-right">
+              <input class="input is-medium" type="email" placeholder="Email" />
+              <span class="icon is-left">
+                <i class="fa fa-envelope"></i>
+              </span>
+            </div>
+            <button class="animoPulse">
+              <span>Subcribe</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+    <script src="./scripts.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   </body>
 </html>
