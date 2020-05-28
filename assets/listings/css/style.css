@@ -181,7 +181,9 @@ a.navbar-item:hover {
 /* Kết thúc phần navbar */
 
 /* Single listing */
-
+.listing h3 {
+  margin-top: -15px !important;
+}
 .content-shell {
   width: 100%;
   height: 300px;
@@ -217,7 +219,7 @@ button {
   color: #ededed;
   width: 100%;
   overflow: hidden;
-  margin: 0.5em;
+  margin: 0px;
 }
 .listing:hover {
   cursor: pointer;
@@ -260,7 +262,6 @@ button {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  backface-visiblity: hidden;
 }
 .listing:before {
   opacity: 0;
@@ -325,6 +326,15 @@ button {
 
 /* property-title-box */
 
+.property-title-box {
+  padding-left: 15px;
+}
+
+.property-title-box h4 {
+  padding-bottom: 20px;
+  font-size: 1.3em;
+}
+
 .property-location {
   display: block;
 }
@@ -332,11 +342,16 @@ button {
 .property-location i {
   display: inline-block;
   float: left;
+  color: rgb(77, 77, 199);
 }
 
 .property-feature {
   display: flex;
   flex-direction: row;
+}
+
+.property-feature i {
+  color: rgba(0, 0, 0, 0.534);
 }
 
 .product-rating p {
@@ -346,6 +361,30 @@ button {
 
 .product-rating ul li {
   display: inline;
+}
+
+.product-rating i {
+  color: rgb(230, 230, 0);
+}
+
+.tile.is-parent {
+  padding: 0px;
+}
+
+.tile.is-child {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+}
+
+.property-action {
+  padding-right: 15px;
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
 }
 
 /* Kết thúc property-title-box */
