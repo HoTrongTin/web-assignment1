@@ -136,8 +136,8 @@ a.navbar-item:hover {
   text-align: center;
   font-size: 18px;
   /* background: rgb(197, 119, 119); */
-  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.5)
-    /* Center slide text vertically */;
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.5);
+  /* Center slide text vertically */
   display: flex;
   justify-content: center;
   align-items: center;
