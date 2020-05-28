@@ -25,6 +25,22 @@ document.addEventListener('DOMContentLoaded', () => {
 
 });
 
+// Auto hide navbar on scroll
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function () {
+    var currentScrollPos = window.pageYOffset;
+    if (prevScrollpos > currentScrollPos) {
+        document.getElementById("navbar").style.top = "0";
+    } else {
+        document.getElementById("navbar").style.top = "-58px";
+    }
+    prevScrollpos = currentScrollPos;
+}
+$(window).scroll(function () {
+    var $nav = $("#navbar");
+    $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+});
+
 // phần này dùng cho tabs
 function switchToExterior() {
     removeActive();
