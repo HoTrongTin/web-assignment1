@@ -101,6 +101,34 @@
     <!-- Phần listings -->
 
     <div class="container">
+
+      <div class="columns view-details">
+        <div class="column is-3">
+            <div class="item-view-mode res-box">
+                <ul class="nav item-filter-list" role="tablist">
+                    <li><a data-toggle="tab" href="#" style="color: #333333;"><i class="fas fa-th"></i></a></li>
+                    <li><a class="active" data-toggle="tab" href="#"><i class="fas fa-list"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="column is-4">
+          <div class="select">
+            <select>
+                <option>Sort by Newest</option>
+                <option>Sort by Oldest</option>
+                <option>Sort by Featured</option>
+                <option>Sort by Price(Low to High)</option>
+                <option>Sort by Price(Low to High)</option>
+            </select>
+          </div>
+        </div>
+        <div class="column is-5 count-showing">
+            <div class="item-element res-box  text-right sm-left">
+                <p>Showing <span style="color: #6449e7; font-weight: 600;">1-15 of 69</span> Listings</p>
+            </div>
+        </div>
+      </div>
+
       <div class="tile is-ancestor single-listing">
         <div class="tile is-parent">
           <div class="tile is-child">
@@ -774,6 +802,20 @@
           </div>
         </div>
       </div>
+
+      <nav class="pagination is-centered" role="navigation" aria-label="pagination">
+        <a class="pagination-previous">Previous</a>
+        <a class="pagination-next">Next page</a>
+        <ul class="pagination-list">
+          <li><a class="pagination-link" aria-label="Goto page 1">1</a></li>
+          <li><span class="pagination-ellipsis">&hellip;</span></li>
+          <li><a class="pagination-link" aria-label="Goto page 45">45</a></li>
+          <li><a class="pagination-link is-current" aria-label="Page 46" aria-current="page">46</a></li>
+          <li><a class="pagination-link" aria-label="Goto page 47">47</a></li>
+          <li><span class="pagination-ellipsis">&hellip;</span></li>
+          <li><a class="pagination-link" aria-label="Goto page 86">86</a></li>
+        </ul>
+      </nav>
     </div>
 
     <!-- Kết thúc listings -->
