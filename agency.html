@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Template - Real Estate</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css"
+    />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+    <link rel="stylesheet" href="./assets/agency/css/style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css" />
+  </head>
+  <body>
+    <!-- Jumbotron -->
+    <section class="hero is-fullheight" id="jumbotron">
+      <!-- Hero head: will stick at the top -->
+      <div class="hero-head">
+        <!-- Navbar -->
+        <nav class="navbar is-dark" id="navbar">
+          <div class="navbar-brand">
+            <a class="navbar-item animoSlide" href="#">
+              <img
+                src="https://bulma.io/images/bulma-logo-white.png"
+                alt="Based on Bulma"
+                width="112"
+                height="28"
+              />
+            </a>
+            <div
+              class="navbar-burger burger"
+              data-target="navbarExampleTransparentExample"
+            >
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+
+          <div id="navbarExampleTransparentExample" class="navbar-menu">
+            <div class="navbar-start">
+              <a class="navbar-item animoSlide" href="index.html">
+                Home
+              </a>
+              <a class="navbar-item animoSlide" href="listings.html">
+                Listings
+              </a>
+              <a class="navbar-item animoSlide" href="agency.html">
+                Agency
+              </a>
+              <a class="navbar-item animoSlide" href="#">
+                News
+              </a>
+              <a class="navbar-item animoSlide" href="#">
+                About Us
+              </a>
+            </div>
+
+            <div class="navbar-end">
+              <a class="navbar-item email" href="#">
+                <span class="icon" style="margin-right: 10px; width: 20px">
+                  <img src="assets/agency/img/mail.svg" alt="" />
+                </span>
+                <span style="font-style: italic; font-size: 0.9em">tin.hotrong@hcmut.edu.vn</span>
+              </a>
+              <div class="navbar-item">
+                <div class="field is-grouped">
+                  <p class="control">
+                    <a class="button is-outlined" href="#">
+                      <span class="icon">
+                        <img src="assets/agency/img/phone.svg" alt="" style="width: 15px;"/>
+                      </span>
+                      <span>Contact Us</span>
+                    </a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <!-- Hero content: will be in the middle -->
+      <div class="hero-body">
+        <div class="container has-text-centered">
+          <h1 class="title">
+            Agency List
+          </h1>
+          <h2 class="subtitle">
+            HOME &nbsp;  / &nbsp; AGENCY
+          </h2>
+        </div>
+      </div>
+    </section>
+
+    <div class="container">
+
+      <!-- Phần view mode -->
+      <div class="columns view-details">
+        <div class="column is-3">
+            <div class="item-view-mode res-box">
+                <ul class="nav item-filter-list" role="tablist">
+                    <li><a data-toggle="tab" href="#" style="color: #333333;"><i class="fas fa-th"></i></a></li>
+                    <li><a class="active" data-toggle="tab" href="#"><i class="fas fa-list"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="column is-4">
+          <div class="select">
+            <select>
+                <option>Sort by Newest</option>
+                <option>Sort by Oldest</option>
+                <option>Sort by Featured</option>
+                <option>Sort by Price(Low to High)</option>
+                <option>Sort by Price(Low to High)</option>
+            </select>
+          </div>
+        </div>
+        <div class="column is-5 count-showing">
+            <div class="item-element res-box  text-right sm-left">
+                <p>Showing <span style="color: #6449e7; font-weight: 600;">1-15 of 69</span> Listings</p>
+            </div>
+        </div>
+      </div>
+      <!-- Hết phần view mode -->
+      
+      <div class="columns">
+        <div class="column is-6" style="border: 1px solid red;">
+          <div class="wrapper">
+            <div class="agency-card">
+                <img src="./assets/agency/img/agents/company_1.jpg">
+                <div class="descriptions">
+                  <h1>John Wick 3</h1>
+                  <p>
+                      After gunning down a member of the High Table -- the shadowy international assassin's guild -- legendary hit man John Wick finds himself stripped of the organization's protective services. Now stuck with a $14 million bounty on his head, Wick must fight his way through the streets of New York as he becomes the target of the world's most ruthless killers.
+                  </p>
+                  <button>
+                      <i class="fab fa-youtube"></i>
+                      Play trailer on YouTube
+                  </button>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <footer class="footer has-background-white-ter" id="my-footer">
+      <div class="content has-text-centered has-text-white">
+        <div class="columns is-offset-1">
+          <div class="column">
+            <a href="#" class="footer-logo animoBorderLeftRight"">
+              <img
+                src="https://bulma.io/images/bulma-logo-white.png"
+                alt="Bulma: a modern CSS framework based on Flexbox"
+                width="112"
+                height="28"
+              />
+            </a>
+            <p class="has-text-center">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
+          </div>
+          <div class="column">
+            <h6>Popular Searches</h6>
+            <ul>
+              <li>
+                <a href="#" class="animoBorderLeftRight">Property for Rent</a>
+              </li>
+              <li>
+                <a href="#" class="animoBorderLeftRight">Property for Sale</a>
+              </li>
+              <li>
+                <a href="#" class="animoBorderLeftRight">Resale Properties</a>
+              </li>
+              <li>
+                <a href="#" class="animoBorderLeftRight">Recent Properties</a>
+              </li>
+            </ul>
+          </div>
+          <div class="column">
+            <h6>Quick Links</h6>
+            <ul>
+              <li><a href="#" class="animoBorderLeftRight">About us</a></li>
+              <li><a href="#" class="animoBorderLeftRight">Contact us</a></li>
+              <li>
+                <a href="#" class="animoBorderLeftRight">Privacy Policy</a>
+              </li>
+              <li><a href="#" class="animoBorderLeftRight">FAQ</a></li>
+            </ul>
+          </div>
+          <div class="column">
+            <h6>Subscribe</h6>
+            <div class="control has-icons-left has-icons-right">
+              <input class="input is-medium" type="email" placeholder="Email" />
+              <span class="icon is-left">
+                <i class="fa fa-envelope"></i>
+              </span>
+            </div>
+            <button class="animoPulse">
+              <span>Subcribe</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="./assets/agency/js/scripts.js"></script>
+  </body>
+</html>
