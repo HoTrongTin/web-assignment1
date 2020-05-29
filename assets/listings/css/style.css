@@ -181,7 +181,32 @@ a.navbar-item:hover {
 /* Kết thúc phần navbar */
 
 /* Single listing */
-.listing h3 {
+
+.container {
+  margin-top: 100px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .container {
+    padding: 0px 30px;
+  }
+}
+
+.tile.is-ancestor:not(:last-child) {
+  margin-bottom: 50px;
+}
+
+.single-listing {
+  /* margin-bottom: 300px; */
+  box-shadow: 0 0px 5px rgba(0, 0, 0, 0.116);
+  transition: 0.3s;
+  border-radius: 3px;
+}
+.single-listing:hover {
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+}
+
+.listing-heading h3 {
   margin-top: -15px !important;
 }
 .content-shell {
@@ -211,7 +236,38 @@ button {
 }
 
 .listing-heading {
-  padding-bottom: 20px;
+  padding-bottom: 10px;
+}
+
+.tag.is-warning {
+  background-color: #6449e7 !important;
+  color: white !important;
+  font-weight: 600;
+}
+
+.tag.is-success {
+  background-color: #fa6742 !important;
+  color: white !important;
+  font-weight: 600;
+}
+
+.listing-author img {
+  border-radius: 50%;
+  width: 50px;
+}
+
+.listing-author span {
+  color: #fff;
+  font-weight: 500;
+  letter-spacing: 0px;
+  vertical-align: middle;
+  padding-left: 10px;
+}
+
+.property-author {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 .listing {
@@ -240,7 +296,7 @@ button {
 .listing:hover .listing-bgimg {
   transform: scale(1.2);
 }
-.listing:hover .listing-action {
+.listing:hover .listing-author {
   opacity: 1;
   transform: translate(-50%, 0);
 }
@@ -276,7 +332,7 @@ button {
   z-index: -1;
 }
 .listing-content,
-.listing-action {
+.listing-author {
   position: absolute;
 }
 .listing-content {
@@ -287,7 +343,7 @@ button {
   transition: transform 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
   transform: translateY(65%);
 }
-.listing-action {
+.listing-author {
   position: absolute;
   bottom: 2em;
   left: 50%;
@@ -311,7 +367,7 @@ button {
   left: 0;
   width: 100%;
   height: 100%;
-  transition: transform 0.6s cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: transform 1.6s cubic-bezier(0.075, 0.82, 0.165, 1);
   transform: scale(1);
   background-size: cover;
   background-position: center center;
@@ -327,12 +383,20 @@ button {
 /* property-title-box */
 
 .property-title-box {
-  padding-left: 15px;
+  padding-left: 40px;
+}
+
+@media (max-width: 1024px) {
+  .property-title-box {
+    padding-left: 40px;
+    padding-top: 40px;
+  }
 }
 
 .property-title-box h4 {
   padding-bottom: 20px;
   font-size: 1.3em;
+  font-weight: 600;
 }
 
 .property-location {
@@ -342,16 +406,47 @@ button {
 .property-location i {
   display: inline-block;
   float: left;
-  color: rgb(77, 77, 199);
+  color: #6449e7;
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+.property-location p {
+  display: inline-block;
+  color: #888;
+  font-size: 14px;
+  font-weight: 400;
 }
 
 .property-feature {
   display: flex;
   flex-direction: row;
 }
+.property-feature span {
+  font-size: 0.9em;
+}
+
+@media only screen and (max-width: 768px) {
+  .property-feature {
+    /* display: flex; */
+    flex-direction: column;
+    /* padding: 0px 0px 0px 0px; */
+  }
+}
 
 .property-feature i {
-  color: rgba(0, 0, 0, 0.534);
+  font-size: 16px;
+  margin-right: 5px;
+  color: #ddd;
+}
+
+.product-rating {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-top: 1px solid #ededed;
+  padding-top: 20px;
+  margin-right: 40px;
 }
 
 .product-rating p {
@@ -364,7 +459,21 @@ button {
 }
 
 .product-rating i {
-  color: rgb(230, 230, 0);
+  color: #ffc600;
+}
+
+.list-date i {
+  font-size: 16px;
+  margin-right: 5px;
+  color: #ddd;
+}
+
+p.list-date {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.8;
+  margin-bottom: 0;
+  color: #888;
 }
 
 .tile.is-parent {
@@ -379,12 +488,51 @@ button {
 }
 
 .property-action {
-  padding-right: 15px;
-  height: 70%;
+  padding-right: 40px;
+  height: 75%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-end;
+}
+
+@media only screen and (max-width: 768px) {
+  .property-action {
+    padding: 15px;
+    padding-left: 40px;
+    height: 110px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+}
+
+.property-action .per_sale {
+  color: #888;
+  font-size: 12px;
+  text-transform: capitalize;
+  font-weight: 400;
+}
+
+.property-action .price {
+  color: #6449e7;
+  font-size: 20px;
+  font-weight: 700;
+  display: inline-block;
+  line-height: 1;
+}
+
+.property-action .button {
+  color: white;
+  background-color: #6449e7;
+  transition: background-color 0.3s, border 0.3s;
+}
+
+.property-action .button:hover {
+  background-color: transparent;
+  border: 1px solid #6449e7;
+  color: #6449e7;
 }
 
 /* Kết thúc property-title-box */
