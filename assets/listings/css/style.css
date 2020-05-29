@@ -180,6 +180,178 @@ a.navbar-item:hover {
 
 /* Kết thúc phần navbar */
 
+/* Single listing */
+
+.content-shell {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  align-items: flex-start;
+}
+.content-shell .listing {
+  align-self: stretch;
+}
+.content-shell .content-shell {
+  flex-direction: column;
+}
+.content-shell .content-shell .listing {
+  height: 25vh;
+}
+
+button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: none;
+  color: #ededed;
+  border: 1px solid #ededed;
+  padding: 1em 1.5em;
+}
+
+.listing-heading {
+  padding-bottom: 20px;
+}
+
+.listing {
+  position: relative;
+  color: #ededed;
+  width: 100%;
+  overflow: hidden;
+  margin: 0.5em;
+}
+.listing:hover {
+  cursor: pointer;
+}
+.listing:hover:after {
+  opacity: 0.5;
+}
+.listing:hover:before {
+  transform: scale(0.925, 0.925);
+  opacity: 1;
+}
+.listing:hover p {
+  opacity: 1;
+}
+.listing:hover .listing-content {
+  transform: translateY(0);
+}
+.listing:hover .listing-bgimg {
+  transform: scale(1.2);
+}
+.listing:hover .listing-action {
+  opacity: 1;
+  transform: translate(-50%, 0);
+}
+.listing-100 .listing-content {
+  transform: translateY(82.5%);
+}
+.listing:before,
+.listing:after {
+  display: block;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: opacity 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
+  pointer-events: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  backface-visiblity: hidden;
+}
+.listing:before {
+  opacity: 0;
+  border: 1px solid #ededed;
+  transform-origin: center center;
+  transition: transform 0.3s cubic-bezier(0.075, 0.82, 0.165, 1),
+    opacity 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.listing:after {
+  background: #121212;
+  opacity: 0;
+  z-index: -1;
+}
+.listing-content,
+.listing-action {
+  position: absolute;
+}
+.listing-content {
+  top: 2em;
+  left: 2em;
+  right: 2em;
+  height: 100%;
+  transition: transform 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+  transform: translateY(65%);
+}
+.listing-action {
+  position: absolute;
+  bottom: 2em;
+  left: 50%;
+  transform: translate(-50%, 100%);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.75s cubic-bezier(0.075, 0.82, 0.165, 1),
+    transform 0.6s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.listing h3 {
+  margin-top: 0;
+}
+.listing p {
+  opacity: 0;
+  transition: opacity 1.4s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.listing-bgimg {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s cubic-bezier(0.075, 0.82, 0.165, 1);
+  transform: scale(1);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+@media (min-width: 768px) {
+  .inner {
+    width: 80%;
+  }
+}
+
+/* property-title-box */
+
+.property-location {
+  display: block;
+}
+
+.property-location i {
+  display: inline-block;
+  float: left;
+}
+
+.property-feature {
+  display: flex;
+  flex-direction: row;
+}
+
+.product-rating p {
+  display: inline;
+  float: left;
+}
+
+.product-rating ul li {
+  display: inline;
+}
+
+/* Kết thúc property-title-box */
+
+/* Kết thúc single listing */
+
 /* Footer */
 
 .footer {
