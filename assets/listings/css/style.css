@@ -131,51 +131,13 @@ a.navbar-item:hover {
 
 .hero-body .title {
   color: white;
-  font-weight: 200;
+  font-weight: 600;
 }
 
 .hero-body .subtitle {
   padding-top: 20px;
   color: white;
   font-size: 0.9em;
-}
-
-.swiper-container-0 {
-  width: 100%;
-  height: 80%;
-  overflow: hidden;
-  position: absolute;
-  top: 0px;
-  /* box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.4) !important; */
-}
-.swiper-container-0 .swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  /* background: rgb(197, 119, 119); */
-  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.5);
-  /* Center slide text vertically */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.swiper-container-0 .content {
-  position: absolute;
-  z-index: 999;
-  color: white;
-  top: 50%;
-  left: 15%;
-}
-
-.swiper-container-0 h1 {
-  color: white;
-}
-
-@media only screen and (max-width: 480px) {
-  .swiper-button-prev,
-  .swiper-button-next {
-    visibility: hidden;
-  }
 }
 
 /* Kết thúc phần navbar */
@@ -592,6 +554,16 @@ p.list-date {
 /* Kết thúc property-title-box */
 
 /* Kết thúc single listing */
+
+/* Pagination */
+
+.pagination {
+  margin-top: 70px;
+}
+
+.pagination .is-current {
+  background-color: #6449e7;
+}
 
 /* Footer */
 
