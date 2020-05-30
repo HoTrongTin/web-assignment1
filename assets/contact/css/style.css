@@ -54,35 +54,35 @@ a.navbar-item:hover {
   background-color: transparent !important;
 }
 
-.animoSlide {
-  /* width: 120px;
-  height: 40px;
-  padding: 0 14px; */
-  /* text-align: center; */
-  /* line-height: 40px; */
+.animoDoubleDashed {
   cursor: pointer;
   position: relative;
-  transition: 0.5s ease-out;
   overflow: hidden;
 }
-.animoSlide::after {
-  content: "";
+.animoDoubleDashed::after,
+.animoDoubleDashed::before {
   position: absolute;
-  bottom: 0;
+  content: "";
   left: 0;
+  height: 3px;
   width: 100%;
-  height: 100%;
-  transform: translateY(100%);
   background-color: #6449e7;
-  transition: transform 0.2s ease-out;
-  z-index: -1;
+  transition: transform 0.2s ease-in-out;
 }
-.animoSlide:hover {
-  color: #fff;
+.animoDoubleDashed::before {
+  top: 0;
+  transform: translateX(-100%);
 }
-.animoSlide:hover::after {
-  transform: translateY(0);
-  transition: transform 0.2s ease-in;
+.animoDoubleDashed::after {
+  bottom: 0;
+  transform: translateX(100%);
+}
+.animoDoubleDashed:hover::after,
+.animoDoubleDashed:hover::before {
+  transform: translateX(0);
+}
+.animoDoubleDashed:hover {
+  color: #bfb0ff !important;
 }
 
 .navbar-item .button {
@@ -150,7 +150,7 @@ a.navbar-item:hover {
   color: #888;
 }
 
-.contact-info-item h4{
+.contact-info-item h4 {
   line-height: 1.1;
   margin: 10px 0;
   font-size: 20px;
@@ -158,7 +158,7 @@ a.navbar-item:hover {
   font-weight: 700;
 }
 
-.contact-info-item strong{
+.contact-info-item strong {
   color: #888;
 }
 
@@ -169,39 +169,39 @@ a.navbar-item:hover {
 
 /* Write message */
 
-.write-message{
+.write-message {
   padding: 100px 20px 20px 20px;
 }
 
-.is-success.input{
+.is-success.input {
   border-color: #6449e7 !important;
 }
 
-.is-success.input:focus{
+.is-success.input:focus {
   border-color: #fa6742 !important;
-  box-shadow: 0 0.0625em 0.125em rgba(10, 10, 10, 0.219)
+  box-shadow: 0 0.0625em 0.125em rgba(10, 10, 10, 0.219);
 }
 
-.submit-button{
+.submit-button {
   text-align: center;
 }
 
-.button.is-link{
+.button.is-link {
   background-color: #6449e7;
   transition: all 0.2s ease-in-out;
 }
 
-.button.is-link:hover{
+.button.is-link:hover {
   background-color: #fa6742;
 }
 
 /* Google map */
 
-.google-map{
+.google-map {
   padding: 100px 20px 20px 20px;
 }
 
-#map{
+#map {
   width: 100%;
   height: 367px;
 }

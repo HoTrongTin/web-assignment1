@@ -54,35 +54,35 @@ a.navbar-item:hover {
   background-color: transparent !important;
 }
 
-.animoSlide {
-  /* width: 120px;
-  height: 40px;
-  padding: 0 14px; */
-  /* text-align: center; */
-  /* line-height: 40px; */
+.animoDoubleDashed {
   cursor: pointer;
   position: relative;
-  transition: 0.5s ease-out;
   overflow: hidden;
 }
-.animoSlide::after {
-  content: "";
+.animoDoubleDashed::after,
+.animoDoubleDashed::before {
   position: absolute;
-  bottom: 0;
+  content: "";
   left: 0;
+  height: 3px;
   width: 100%;
-  height: 100%;
-  transform: translateY(100%);
   background-color: #6449e7;
-  transition: transform 0.2s ease-out;
-  z-index: -1;
+  transition: transform 0.2s ease-in-out;
 }
-.animoSlide:hover {
-  color: #fff;
+.animoDoubleDashed::before {
+  top: 0;
+  transform: translateX(-100%);
 }
-.animoSlide:hover::after {
-  transform: translateY(0);
-  transition: transform 0.2s ease-in;
+.animoDoubleDashed::after {
+  bottom: 0;
+  transform: translateX(100%);
+}
+.animoDoubleDashed:hover::after,
+.animoDoubleDashed:hover::before {
+  transform: translateX(0);
+}
+.animoDoubleDashed:hover {
+  color: #bfb0ff !important;
 }
 
 .navbar-item .button {
@@ -142,7 +142,7 @@ a.navbar-item:hover {
 
 /* Kết thúc phần navbar */
 
-h3{
+h3 {
   font-weight: 600 !important;
 }
 
@@ -155,13 +155,13 @@ h3{
   align-items: center;
 }
 
-.video-and-text .is-6{
+.video-and-text .is-6 {
   padding: 25px;
 }
 
 @media only screen and (max-width: 768px) {
-  .video-and-text iframe{
-    width: 90vw;;
+  .video-and-text iframe {
+    width: 90vw;
   }
   .video-and-text {
     flex-direction: column;
@@ -170,10 +170,9 @@ h3{
 }
 /* Video Youtube */
 
-
 /* Text mô tả kế bên video */
 
-.is-ancestor .is-vertical .tile .tile{
+.is-ancestor .is-vertical .tile .tile {
   padding: 20px;
 }
 
@@ -202,11 +201,11 @@ h3{
 
 /* Phần mấy cái box about properties */
 
-.about-us{
+.about-us {
   padding-top: 100px;
 }
 
-.about-us .is-4{
+.about-us .is-4 {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -296,7 +295,7 @@ h3{
 
 /* Phần mấy cái svg overview */
 
-.overview{
+.overview {
   margin-top: 20px;
   padding: 10px;
 }
@@ -316,7 +315,7 @@ h3{
 
 /* Phần agent list */
 
-.slogan{
+.slogan {
   text-align: center;
   margin-bottom: 8px;
   line-height: 1;
@@ -349,7 +348,7 @@ h3{
 
 /* Slider agent */
 
-.single-agent img{
+.single-agent img {
   max-width: 100%;
   height: auto;
 }
@@ -368,47 +367,45 @@ h3{
   text-align: center;
 }
 
-.single-agent-info h4{
+.single-agent-info h4 {
   font-size: 20px;
   font-weight: 600;
 }
 
-.single-agent-info h4 a{
+.single-agent-info h4 a {
   color: #333;
 }
 
-.single-agent-info span{
+.single-agent-info span {
   padding: 5px;
   font-weight: 400;
   color: #888;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 14px;
 }
 
-.single-agent-info .contact-info{
+.single-agent-info .contact-info {
   display: flex;
   flex-direction: row;
   font-weight: 400;
   color: #888;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 14px;
 }
 
-.single-agent-info .contact-info .icon i{
+.single-agent-info .contact-info .icon i {
   color: #6449e7;
   /* font-size: 1000px; */
 }
-.contact-info .text a{
+.contact-info .text a {
   color: #888;
 }
-
 
 /* Kết thúc slider agent */
 
 /* Kết thúc agent list */
 
 /* Phần Partners list */
-
 
 .partner-list {
   position: relative;
@@ -435,20 +432,19 @@ h3{
 
 /* Slider partner */
 
-.partner-list img{
+.partner-list img {
   text-align: center;
   opacity: 0.5;
   transition: all 0.3s;
 }
 
-.partner-list img:hover{
+.partner-list img:hover {
   opacity: 1;
 }
 
 /* Kết thúc slider partner */
 
 /* Kết thúc partner list */
-
 
 /* Footer */
 
