@@ -163,7 +163,7 @@ a.navbar-item:hover {
 }
 
 .fancy-button {
-  background: #6349e762 !important;
+  background: #6349e7 !important;
   --offset: 10px;
   --border-size: 2px;
   display: block;
@@ -187,7 +187,7 @@ a.navbar-item:hover {
 }
 
 .fancy-button:hover {
-  background: #6449e7 !important;
+  background: #fa6742 !important;
   color: rgb(255, 255, 255);
 }
 .button__horizontal,
