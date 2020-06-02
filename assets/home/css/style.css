@@ -875,14 +875,14 @@ a.navbar-item:hover {
 
 /*  phần photo galery modal */
 
-#susmodal-content {
+.susmodal-content {
   margin-top: 20px !important;
   width: 70vw !important;
   height: auto !important;
 }
 
 @media (max-width: 768px) {
-  #susmodal-content {
+  .susmodal-content {
     width: 95vw !important;
   }
 }

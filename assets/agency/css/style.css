@@ -345,7 +345,7 @@ a.navbar-item:hover {
   width: fit-content;
   height: 40px;
   cursor: pointer;
-  border-style: 2px solid white;
+  border: 2px solid white;
   border-radius: 3px;
   background-color: white;
   color: #6449e7;

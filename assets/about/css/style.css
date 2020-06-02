@@ -159,6 +159,10 @@ h3 {
   padding: 25px;
 }
 
+.video-and-text iframe {
+  width: 100%;
+}
+
 @media only screen and (max-width: 768px) {
   .video-and-text iframe {
     width: 90vw;
